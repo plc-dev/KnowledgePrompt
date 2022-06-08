@@ -21,6 +21,10 @@ setuptools.setup(
         'torch',
         'transformers',
         'accelerate',
-        'huggingface_hub'
+        'huggingface_hub',
+        'nltk',
+        'matplotlib',
+        'pydot',
+        'networkx'
     ],
 )

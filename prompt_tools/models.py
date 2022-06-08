@@ -7,6 +7,14 @@ from enum import Enum
 import typing
 import torch
 import transformers
+import numpy as np
+
+def stable_softmax(x):
+    z = x - np.max(x, axis=-1, keepdims=True)
+    numerator = np.exp(z)
+    denominator = np.sum(numerator, axis=-1, keepdims=True)
+    softmax = numerator / denominator
+    return softmax
 
 # more arguments for generate method:
 # https://huggingface.co/docs/transformers/v4.19.2/en/main_classes/text_generation#transformers.generation_utils.GenerationMixin.generate
