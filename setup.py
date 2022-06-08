@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name='prompt_tools',
-    version='0.0.1',
+    version='0.0.2',
     author='Paul Christ',
     author_email='paul.l.christ@web.de',
     description='Tools for prompting KG from OPT-models',

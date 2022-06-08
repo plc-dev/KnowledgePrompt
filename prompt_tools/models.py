@@ -182,7 +182,7 @@ class OPTRunner:
 
         return model
     
-    def prompt_model(self, prompt: str, prompt_config: PromptParameters) -> List[Any, str]:
+    def prompt_model(self, prompt: str, prompt_config: PromptParameters) -> List[Any]:
         """
         text generation according to prompt_config and the given prompt
         """
